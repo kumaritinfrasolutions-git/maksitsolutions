@@ -3,62 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recruitment Support | Kumar IT & Infra Solutions</title>
+    <title>Recruitment Support & CV Sourcing | MAKS IT Solutions</title>
+    <meta name="description" content="Flat-rate $0.50 per pre-screened candidate resume. Scale your hiring without expensive recruitment agency percentages.">
+    <meta property="og:title" content="Recruitment Support & CV Sourcing | MAKS IT Solutions">
+    <meta property="og:description" content="Flat-rate $0.50 per pre-screened candidate resume. Scale your hiring without expensive recruitment agency percentages.">
     <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
 </head>
 <body>
-    <header>
-        <h1><a href="index.html" style="color: #ffffff; text-decoration: none;">Kumar IT & Infra Solutions</a></h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html" class="active">Our Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <!-- Top Bar Contract -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="brand-wordmark">
+                <span class="brand-dot" style="background-color: var(--accent-emerald);"></span>
+                <span>MAKS IT Solutions</span>
+            </a>
+
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="it-consulting.html" class="nav-link">IT Consulting</a>
+                <a href="recruitment.html" class="nav-link active">Recruitment</a>
+                <a href="services.html" class="nav-link">All Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="themeToggleBtn" type="button" aria-label="Toggle Psychological Blue Mode">
+                    <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                    <span>Deep Navy</span>
+                </button>
+                <a href="contact.html?plan=recruitment" class="btn btn-emerald btn-sm">Order Resumes</a>
+                <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-nav-panel" id="mobileNavPanel">
+            <div class="mobile-nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="it-consulting.html" class="nav-link">IT Consulting</a>
+                <a href="recruitment.html" class="nav-link active">Recruitment</a>
+                <a href="services.html" class="nav-link">All Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="contact.html?plan=recruitment" class="btn btn-emerald" style="width: 100%;">Order Resumes</a>
+        </div>
     </header>
 
-    <main class="content">
-        <h2>Recruitment Support Services</h2>
-        <div class="service-detail-card">
-            <p class="highlight-text">We support your recruitment team by providing quality Resumes at a competitive price-per-Resume basis.</p>
-            <p>Skip the hours spent sorting through unmatched applications. Our talent acquisition specialists screen and source high-calibre candidates tailored strictly to your job specifications, delivering pre-vetted Resumes so you only pay for quality matches.</p>
-        </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" style="background: radial-gradient(circle at 50% 0%, #ecfdf5 0%, var(--bg-canvas) 70%);">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-kicker-bar">
+                            <span style="color: var(--accent-emerald);">On-Demand Talent Pipeline</span>
+                            <span class="bullet">&bull;</span>
+                            <span>Zero Placement Percentages</span>
+                        </div>
+                        <h1 class="hero-headline">Pre-Vetted Candidate Resumes at Flat $0.50 per Profile</h1>
+                        <p class="hero-lead">
+                            Skip tedious sourcing hours and high-percentage recruitment fees. We source, filter, and deliver verified talent profiles tailored strictly to your job specifications.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#cvCalculator" class="btn btn-emerald btn-lg">Calculate Sourcing Cost</a>
+                            <a href="#workflow" class="btn btn-outline btn-lg">How It Works</a>
+                        </div>
+                    </div>
 
-        <!-- Recruitment Pricing Box Layout -->
-        <h3 style="margin-top: 40px; margin-bottom: 20px;">Charges Per Service Model</h3>
-
-        <div style="max-width: 500px; margin: 0 auto 30px auto; background: #ffffff; padding: 35px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border: 1px solid #ced4da; text-align: center;">
-            
-            <h4 style="font-size: 1.6rem; color: #050505; margin-bottom: 5px; font-weight: 700; letter-spacing: 0.5px;">CV SOURCING</h4>
-            
-            <!-- Clean Reverted Pricing Badge -->
-            <div style="margin: 20px 0; background-color: #F0F2F5; padding: 15px; border-radius: 8px; display: flex; align-items: center; justify-content: center; gap: 4px;">
-                <span style="font-size: 2.2rem; font-weight: bold; color: #1877F2; line-height: 1;">$0.50</span>
-                <span style="font-size: 1.1rem; color: #65676B; font-weight: 600;">/ CV</span>
+                    <div class="hero-media-carrier">
+                        <img src="/src/assets/images/feature_talent_recruitment_1790310004537.jpg" 
+                             alt="Talent Acquisition and CV Screening Specialists" 
+                             referrerPolicy="no-referrer">
+                        <div class="hero-media-badge">
+                            <div>
+                                <div class="hero-badge-title">Candidate Pipeline Delivery</div>
+                                <div class="hero-badge-sub">Strict verification against hiring criteria</div>
+                            </div>
+                            <span class="tabular-nums" style="font-size: 0.8125rem; font-weight: 700; color: var(--accent-emerald);">48h SLA</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <p style="color: #65676B; font-style: italic; margin-bottom: 25px; font-size: 0.95rem; line-height: 1.5; padding: 0 10px;">
-                We source candidate Resumes based on your job description and hiring requirements, helping you quickly access relevant candidate profiles.
-            </p>
-            
-            <!-- Process workflow map inside the card -->
-            <div style="background-color: #F0F2F5; padding: 15px; border-radius: 8px; font-size: 0.88rem; color: #050505; margin-bottom: 25px; line-height: 1.4; border-left: 4px solid #1877F2; text-align: left;">
-                <strong style="color: #1877F2; display: block; margin-bottom: 5px;">Sourcing Process Workflow:</strong>
-                You provide the requirements &rarr; We source relevant Resumes &rarr; You review and contact.
-            </div>
-            
-            <a href="contact.html" class="btn" style="width: 100%; box-sizing: border-box; display: block; text-align: center; background-color: #42B72A;">Order Pre-Vetted Resumes</a>
-        </div>
+        </section>
 
-        <!-- Custom Tailored Recruitment Support Callout Box -->
-        <div style="text-align: center; margin: 40px auto 20px auto; background-color: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #ced4da; max-width: 500px;">
-            <p style="font-size: 1.05rem; font-weight: 600; color: #050505; margin: 0;">
-                For more tailored recruitment services, please <a href="contact.html" style="color: #1877F2; text-decoration: none; border-bottom: 2px solid #1877F2;">contact us</a>.
-            </p>
-        </div>
+        <!-- Interactive CV Volume Sourcing Estimator -->
+        <section id="cvCalculator" class="section-spacing">
+            <div class="container">
+                <div class="recruitment-showcase">
+                    <div class="section-header text-center" style="margin-bottom: 28px;">
+                        <span class="section-kicker" style="color: var(--accent-emerald);">Interactive Volume Estimator</span>
+                        <h2 class="section-title">Transparent $0.50 / Candidate Pricing</h2>
+                        <p class="section-subtitle">Slide to select the number of matched profiles you need for your active job opening.</p>
+                    </div>
+
+                    <!-- Slider Container -->
+                    <div class="slider-container" style="background: var(--bg-subtle); padding: 24px; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle);">
+                        <div class="slider-top-row">
+                            <span class="slider-label">Target Resume Quantity:</span>
+                            <span class="slider-value-badge" id="cvQuantityDisplay" style="color: var(--accent-emerald);">100 Resumes</span>
+                        </div>
+                        <input type="range" id="cvSlider" min="20" max="500" value="100" step="10">
+
+                        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 24px; text-align: center;">
+                            <div style="background: var(--bg-surface); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                                <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Flat Rate</span>
+                                <span class="tabular-nums" style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">$0.50 / CV</span>
+                            </div>
+                            <div style="background: var(--bg-surface); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                                <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Estimated Turnaround</span>
+                                <span class="tabular-nums" id="turnaroundDisplay" style="font-size: 1.25rem; font-weight: 700; color: var(--text-primary);">48 Hours</span>
+                            </div>
+                            <div style="background: var(--bg-surface); padding: 16px; border-radius: var(--radius-md); border: 1px solid var(--border-subtle);">
+                                <span style="font-size: 0.75rem; color: var(--text-muted); display: block;">Total Cost</span>
+                                <span class="tabular-nums" id="cvTotalCost" style="font-size: 1.5rem; font-weight: 800; color: var(--accent-emerald);">$50.00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 24px;">
+                        <a href="contact.html?plan=recruitment&cvs=100" id="orderCvBtn" class="btn btn-emerald btn-lg" style="width: 100%; max-width: 400px;">
+                            Order Candidate Batch Now &rarr;
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sourcing Workflow Section -->
+        <section id="workflow" class="section-spacing" style="border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-kicker" style="color: var(--accent-emerald);">Streamlined Pipeline</span>
+                    <h2 class="section-title">The 3-Step Sourcing Workflow</h2>
+                    <p class="section-subtitle">How we deliver targeted talent directly to your hiring manager.</p>
+                </div>
+
+                <div class="workflow-steps-grid">
+                    <div class="workflow-step-box">
+                        <span class="workflow-step-num">STEP 01</span>
+                        <h4 class="workflow-step-title">Submit Requirements</h4>
+                        <p class="workflow-step-desc">Share your job description, mandatory technical competencies, seniority level, and location or remote requirements.</p>
+                    </div>
+
+                    <div class="workflow-step-box">
+                        <span class="workflow-step-num">STEP 02</span>
+                        <h4 class="workflow-step-title">We Source &amp; Screen</h4>
+                        <p class="workflow-step-desc">Our talent specialists evaluate candidate databases, filtering out unqualified applicants to ensure exact role alignment.</p>
+                    </div>
+
+                    <div class="workflow-step-box">
+                        <span class="workflow-step-num">STEP 03</span>
+                        <h4 class="workflow-step-title">Review &amp; Interview</h4>
+                        <p class="workflow-step-desc">Receive a compiled dossier of ready-to-contact candidate profiles. You control the interview and hiring decisions with no success fee.</p>
+                    </div>
+                </div>
+
+                <!-- Roles We Source -->
+                <div style="margin-top: 48px; background: var(--bg-subtle); border-radius: var(--radius-lg); padding: 32px; border: 1px solid var(--border-subtle);">
+                    <h3 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 16px; color: var(--text-primary);">Specialized Profiles We Source:</h3>
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px;">
+                        <div style="background: var(--bg-surface); padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                            <strong style="color: var(--accent-primary); display: block; margin-bottom: 4px;">Technical &amp; IT</strong>
+                            <span style="font-size: 0.8125rem; color: var(--text-secondary);">Helpdesk Technicians, Cloud Admins, Systems Engineers, Full-Stack Devs</span>
+                        </div>
+                        <div style="background: var(--bg-surface); padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                            <strong style="color: var(--accent-emerald); display: block; margin-bottom: 4px;">Sales &amp; Growth</strong>
+                            <span style="font-size: 0.8125rem; color: var(--text-secondary);">Account Executives, BDRs, Digital Marketing Specialists, E-Commerce Managers</span>
+                        </div>
+                        <div style="background: var(--bg-surface); padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--border-subtle);">
+                            <strong style="color: var(--text-primary); display: block; margin-bottom: 4px;">Operations &amp; Admin</strong>
+                            <span style="font-size: 0.8125rem; color: var(--text-secondary);">Virtual Assistants, Bookkeepers, Office Managers, Customer Care Leads</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Inquiry Callout -->
+        <section class="section-spacing text-center">
+            <div class="container" style="max-width: 680px; margin: 0 auto;">
+                <h3 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 12px;">Need Bespoke Executive or Niche Talent Sourcing?</h3>
+                <p style="color: var(--text-muted); margin-bottom: 24px;">
+                    Have specialized technical certifications or confidential hiring mandates? Connect with our senior recruitment lead directly.
+                </p>
+                <a href="contact.html?plan=recruitment" class="btn btn-emerald btn-lg">Request Custom Recruitment Spec &rarr;</a>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Kumar IT & Infra Solutions. All rights reserved.</p>
+    <!-- Quiet Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-wordmark">
+                        <span class="brand-dot" style="background-color: var(--accent-emerald);"></span>
+                        <span>MAKS IT Solutions</span>
+                    </a>
+                    <p>Professional IT infrastructure management and cost-effective candidate sourcing tailored specifically for small and growing businesses.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-nav">
+                        <li><a href="it-consulting.html">IT Consulting &amp; Support</a></li>
+                        <li><a href="recruitment.html">Recruitment &amp; CV Sourcing</a></li>
+                        <li><a href="services.html">Comprehensive Catalog</a></li>
+                        <li><a href="it-consulting.html#tiers">Support Pricing Tiers</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#cvCalculator">CV Estimator</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html?plan=recruitment">Order Resumes</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Contact Direct</h4>
+                    <ul class="footer-nav">
+                        <li style="color: var(--text-muted); font-size: 0.875rem;">Support: Mon &ndash; Fri (24/7 Monitoring)</li>
+                        <li><a href="mailto:kumaritinfra.solutions@gmail.com">kumaritinfra.solutions@gmail.com</a></li>
+                        <li><a href="contact.html" style="color: var(--accent-primary); font-weight: 600;">Open Support Ticket &rarr;</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 MAKS IT Solutions &middot; Kumar IT &amp; Infra Solutions. All rights reserved.</p>
+                <p>Designed for reliability, speed, and affordability.</p>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNavPanel = document.getElementById('mobileNavPanel');
+        if (mobileMenuBtn && mobileNavPanel) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileNavPanel.classList.toggle('open');
+            });
+        }
+
+        // CV Estimator Slider
+        const cvSlider = document.getElementById('cvSlider');
+        const cvQuantityDisplay = document.getElementById('cvQuantityDisplay');
+        const cvTotalCost = document.getElementById('cvTotalCost');
+        const turnaroundDisplay = document.getElementById('turnaroundDisplay');
+        const orderCvBtn = document.getElementById('orderCvBtn');
+
+        function updateCvEstimator() {
+            if (!cvSlider) return;
+            const count = parseInt(cvSlider.value, 10);
+            cvQuantityDisplay.textContent = `${count} Resumes`;
+            
+            const total = (count * 0.50).toFixed(2);
+            cvTotalCost.textContent = `$${total}`;
+
+            let turn = '24-48 Hours';
+            if (count > 250) {
+                turn = '4-5 Business Days';
+            } else if (count > 100) {
+                turn = '48-72 Hours';
+            }
+            turnaroundDisplay.textContent = turn;
+
+            if (orderCvBtn) {
+                orderCvBtn.href = `contact.html?plan=recruitment&cvs=${count}`;
+            }
+        }
+
+        if (cvSlider) {
+            cvSlider.addEventListener('input', updateCvEstimator);
+            updateCvEstimator();
+        }
+    </script>
 </body>
 </html>

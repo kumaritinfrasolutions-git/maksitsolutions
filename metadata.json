@@ -1,0 +1,8 @@
+{
+  "name": "MAKS IT Solutions",
+  "description": "Professional IT support and affordable recruitment solutions for small businesses.",
+  "requestFramePermissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

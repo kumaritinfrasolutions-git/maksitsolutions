@@ -3,129 +3,423 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT Consulting | Kumar IT & Infra Solutions</title>
+    <title>IT Consulting & Support Services | MAKS IT Solutions</title>
+    <meta name="description" content="Dedicated remote IT support, endpoint protection, and proactive infrastructure monitoring from $12/device/month.">
+    <meta property="og:title" content="IT Consulting & Support Services | MAKS IT Solutions">
+    <meta property="og:description" content="Dedicated remote IT support, endpoint protection, and proactive infrastructure monitoring from $12/device/month.">
     <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
     <style>
-        /* Unique local styles for the 3-column pricing structure */
-        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 30px 0 30px 0; align-items: start; }
-        .pricing-box { background: #ffffff; padding: 30px 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #ced4da; text-align: center; display: flex; flex-direction: column; justify-content: space-between; height: 100%; min-height: 650px; box-sizing: border-box; }
-        .pricing-box.featured { border: 2px solid #1877F2; box-shadow: 0 6px 16px rgba(24, 119, 242, 0.15); position: relative; }
-        .pricing-box h4 { font-size: 1.4rem; color: #050505; margin-bottom: 5px; font-weight: 700; }
-        .price-badge { margin: 15px 0; background-color: #F0F2F5; padding: 12px; border-radius: 8px; }
-        .price-num { font-size: 1.8rem; font-weight: bold; color: #1877F2; display: block; }
-        .price-sub { font-size: 0.9rem; color: #65676B; font-weight: 600; }
-        .price-desc { color: #65676B; font-style: italic; margin-bottom: 20px; font-size: 0.9rem; line-height: 1.4; min-height: 55px; }
-        .feature-list { list-style-type: none; padding-left: 0; margin: 0 auto 25px auto; text-align: left; width: 100%; max-width: 255px; flex-grow: 1; }
-        .feature-list li { margin-bottom: 10px; color: #050505; font-size: 0.95rem; display: flex; align-items: flex-start; line-height: 1.3; }
-        .feature-list li span { color: #1877F2; font-weight: bold; margin-right: 10px; font-size: 1.05rem; }
+        .comparison-table-wrapper {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            overflow-x: auto;
+            box-shadow: var(--shadow-sm);
+            margin-top: 32px;
+        }
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.875rem;
+        }
+        .comparison-table th, 
+        .comparison-table td {
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+        .comparison-table th {
+            background: var(--bg-subtle);
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+        .comparison-table tr:hover td {
+            background: #fafcff;
+        }
+        .table-check {
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+        .table-dash {
+            color: var(--text-muted);
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1><a href="index.html" style="color: #ffffff; text-decoration: none;">Kumar IT & Infra Solutions</a></h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html" class="active">Our Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <!-- Top Bar Contract -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="brand-wordmark">
+                <span class="brand-dot"></span>
+                <span>MAKS IT Solutions</span>
+            </a>
+
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="it-consulting.html" class="nav-link active">IT Consulting</a>
+                <a href="recruitment.html" class="nav-link">Recruitment</a>
+                <a href="services.html" class="nav-link">All Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="themeToggleBtn" type="button" aria-label="Toggle Psychological Blue Mode">
+                    <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                    <span>Deep Navy</span>
+                </button>
+                <a href="contact.html?plan=it-advanced" class="btn btn-primary btn-sm">Get Started</a>
+                <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-nav-panel" id="mobileNavPanel">
+            <div class="mobile-nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="it-consulting.html" class="nav-link active">IT Consulting</a>
+                <a href="recruitment.html" class="nav-link">Recruitment</a>
+                <a href="services.html" class="nav-link">All Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="contact.html?plan=it-advanced" class="btn btn-primary" style="width: 100%;">Get Started</a>
+        </div>
     </header>
 
-    <main class="content">
-        <h2>IT Consulting Services</h2>
-        <p style="font-size: 1.25rem; font-weight: 600; color: #65676B; margin-top: -10px; margin-bottom: 25px;">Run Your Business. Leave the IT to Us.</p>
-        
-        <div class="service-detail-card">
-            <p class="highlight-text">We provide enterprise-grade IT support tailored for micro and small businesses, giving you access to dedicated technical expertise without the overhead of a full-time IT department.</p>
-            <p>Our goal is to ensure your business remains secure, modern, and operationally efficient without the overhead costs of a full-time, in-house IT department. From setting up secure remote environments to handling software migration and daily technical troubleshooting, we have you covered.</p>
-        </div>
-
-        <!-- Pricing Section Header -->
-        <h3 style="margin-top: 40px; margin-bottom: 5px;">Charges Per Service Model</h3>
-        <p style="color: #65676B; margin-bottom: 25px;">Select the ideal plan tier scale required to fit your technical support infrastructure demands.</p>
-        
-        <div class="pricing-grid">
-            
-            <!-- Tier 1: Essential IT Support -->
-            <div class="pricing-box">
-                <div>
-                    <h4>1. Essential IT Support</h4>
-                    <div class="price-badge">
-                        <span class="price-num">$12</span>
-                        <span class="price-sub">/ Device / Month</span>
+    <main>
+        <!-- Service Hero Section -->
+        <section class="hero" style="padding-bottom: 60px;">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-kicker-bar">
+                            <span>Managed Services & Infrastructure</span>
+                            <span class="bullet">&bull;</span>
+                            <span>SLA-Backed Support</span>
+                        </div>
+                        <h1 class="hero-headline">Run Your Business. Leave the IT to Us.</h1>
+                        <p class="hero-lead">
+                            Enterprise-grade IT support tailored for micro and small businesses. We monitor your devices around the clock, protect against cybersecurity threats, and resolve day-to-day employee technical issues instantly.
+                        </p>
+                        <div class="hero-actions">
+                            <a href="#tiers" class="btn btn-primary btn-lg">Compare Pricing Tiers</a>
+                            <a href="contact.html?plan=custom" class="btn btn-outline btn-lg">Request Custom Setup</a>
+                        </div>
                     </div>
-                    <p class="price-desc">Reliable IT support for everyday business needs.</p>
-                </div>
-                <ul class="feature-list">
-                    <li><span>&check;</span> Remote IT Support</li>
-                    <li><span>&check;</span> System Health Monitoring</li>
-                    <li><span>&check;</span> Antivirus & Endpoint Protection</li>
-                    <li><span>&check;</span> Proactive Monitoring & Support</li>
-                    <li><span>&check;</span> Troubleshooting & Maintenance</li>
-                </ul>
-                <a href="contact.html" class="btn" style="width: 100%; box-sizing: border-box; display: block;">Request IT Support Setup</a>
-            </div>
 
-            <!-- Tier 2: Advanced IT Support -->
-            <div class="pricing-box featured">
-                <div>
-                    <h4>2. Advanced IT Support</h4>
-                    <div class="price-badge" style="background-color: #e7f3ff;">
-                        <span class="price-num">$19</span>
-                        <span class="price-sub">/ Device / Month</span>
+                    <div class="hero-media-carrier">
+                        <img src="/src/assets/images/feature_it_infra_1790309989512.jpg" 
+                             alt="Enterprise Infrastructure & Server Maintenance" 
+                             referrerPolicy="no-referrer">
+                        <div class="hero-media-badge">
+                            <div>
+                                <div class="hero-badge-title">Infrastructure Health Monitoring</div>
+                                <div class="hero-badge-sub">Automated telemetry & patch orchestration</div>
+                            </div>
+                            <span class="tabular-nums" style="font-size: 0.8125rem; font-weight: 700; color: var(--accent-primary);">99.9% Uptime</span>
+                        </div>
                     </div>
-                    <p class="price-desc">Proactive IT management to keep your business secure and productive.</p>
                 </div>
-                <ul class="feature-list">
-                    <li style="font-weight: 600; color: #1877F2;"><span>&check;</span> Everything in Essential</li>
-                    <li><span>&check;</span> Patch & Update Management</li>
-                    <li><span>&check;</span> Application Update Management</li>
-                    <li><span>&check;</span> Advanced Endpoint Security</li>
-                    <li><span>&check;</span> Performance Monitoring & Optimization</li>
-                    <li><span>&check;</span> Priority IT Support</li>
-                    <li><span>&check;</span> Security & Compliance Monitoring</li>
-                    <li><span>&check;</span> Monthly IT Health Report</li>
-                </ul>
-                <a href="contact.html" class="btn" style="width: 100%; box-sizing: border-box; display: block;">Upgrade to Advanced Support</a>
             </div>
+        </section>
 
-            <!-- Tier 3: Premium Managed IT -->
-            <div class="pricing-box">
-                <div>
-                    <h4>3. Premium Managed IT</h4>
-                    <div class="price-badge">
-                        <span class="price-num">$39</span>
-                        <span class="price-sub">/ Device / Month</span>
+        <!-- Pricing Tiers Section -->
+        <section id="tiers" class="section-spacing">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-kicker">Charges Per Service Model</span>
+                    <h2 class="section-title">Clear, Per-Device Monthly Pricing</h2>
+                    <p class="section-subtitle">Scale up or down at any time. No hidden setup fees or surprise maintenance billing.</p>
+                </div>
+
+                <div class="pricing-grid">
+                    <!-- Tier 1: Essential -->
+                    <div class="pricing-card">
+                        <div>
+                            <div class="pricing-card-header">
+                                <span class="tier-kicker">Entry Tier</span>
+                                <h3 class="pricing-title">1. Essential IT Support</h3>
+                                <p class="pricing-summary">Reliable IT support for everyday small business needs.</p>
+                            </div>
+
+                            <div class="pricing-rate-display">
+                                <span class="price-main">$12</span>
+                                <span class="price-unit">/ Device / Month</span>
+                            </div>
+
+                            <ul class="pricing-features-list">
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Remote IT Support &amp; Helpdesk
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    System Health Monitoring
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Antivirus &amp; Endpoint Protection
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Proactive Monitoring &amp; Alerting
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Troubleshooting &amp; Maintenance
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="contact.html?plan=it-essential" class="btn btn-outline" style="width: 100%;">Request Essential Setup</a>
                     </div>
-                    <p class="price-desc">Complete IT management, proactive guidance, and infrastructure expertise for your business.</p>
+
+                    <!-- Tier 2: Advanced (Featured) -->
+                    <div class="pricing-card featured">
+                        <div>
+                            <div class="pricing-card-header">
+                                <span class="tier-kicker">Most Recommended</span>
+                                <h3 class="pricing-title">2. Advanced IT Support</h3>
+                                <p class="pricing-summary">Proactive IT management to keep your business secure and productive.</p>
+                            </div>
+
+                            <div class="pricing-rate-display" style="background: var(--accent-subtle);">
+                                <span class="price-main" style="color: var(--accent-primary);">$19</span>
+                                <span class="price-unit">/ Device / Month</span>
+                            </div>
+
+                            <ul class="pricing-features-list">
+                                <li class="subhead-item">
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Everything in Essential, plus:
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Automated Patch &amp; OS Updates
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Application Lifecycle Management
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Advanced Endpoint Security
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Performance Monitoring &amp; Tuning
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Priority IT Support Queue
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Security &amp; Compliance Monitoring
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Monthly IT Health Report
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="contact.html?plan=it-advanced" class="btn btn-primary" style="width: 100%;">Upgrade to Advanced</a>
+                    </div>
+
+                    <!-- Tier 3: Premium -->
+                    <div class="pricing-card">
+                        <div>
+                            <div class="pricing-card-header">
+                                <span class="tier-kicker">Enterprise Tier</span>
+                                <h3 class="pricing-title">3. Premium Managed IT</h3>
+                                <p class="pricing-summary">Complete IT management, proactive guidance, and infrastructure expertise.</p>
+                            </div>
+
+                            <div class="pricing-rate-display">
+                                <span class="price-main">$39</span>
+                                <span class="price-unit">/ Device / Month</span>
+                            </div>
+
+                            <ul class="pricing-features-list">
+                                <li class="subhead-item">
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Everything in Advanced, plus:
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Infrastructure Health &amp; Architecture Review
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Technology Planning &amp; Advisory (vCIO)
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Vulnerability Management &amp; EDR
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Hardware &amp; Software Asset Management
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Priority SLA-Based Response Guarantee
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="contact.html?plan=it-premium" class="btn btn-outline" style="width: 100%;">Request Premium Setup</a>
+                    </div>
                 </div>
-                <ul class="feature-list">
-                    <li style="font-weight: 600; color: #1877F2;"><span>&check;</span> Everything in Advanced Support</li>
-                    <li><span>&check;</span> Infrastructure Health & Review</li>
-                    <li><span>&check;</span> IT Infrastructure Recommendations</li>
-                    <li><span>&check;</span> Security & Configuration Reviews</li>
-                    <li><span>&check;</span> Technology Planning & Advisory</li>
-                    <li><span>&check;</span> Vulnerability Management</li>
-                    <li><span>&check;</span> Advanced Endpoint Security / EDR</li>
-                    <li><span>&check;</span> IT Asset Management</li>
-                    <li><span>&check;</span> Monthly IT & Security Reports</li>
-                    <li><span>&check;</span> Priority / SLA-Based Support</li>
-                    <li><span>&check;</span> Regular Infrastructure Reviews</li>
-                </ul>
-                <a href="contact.html" class="btn" style="width: 100%; box-sizing: border-box; display: block;">Request Premium Setup</a>
+
+                <!-- Comprehensive Feature Comparison Table -->
+                <div style="margin-top: 64px;">
+                    <div class="section-header text-center">
+                        <span class="section-kicker">Feature Breakdown</span>
+                        <h3 class="section-title" style="font-size: 1.75rem;">Detailed Tier Matrix</h3>
+                    </div>
+
+                    <div class="comparison-table-wrapper">
+                        <table class="comparison-table">
+                            <thead>
+                                <tr>
+                                    <th style="width: 40%;">Support Capability</th>
+                                    <th style="width: 20%; text-align: center;">Essential ($12)</th>
+                                    <th style="width: 20%; text-align: center; background: #e7f3ff; color: var(--accent-primary);">Advanced ($19)</th>
+                                    <th style="width: 20%; text-align: center;">Premium ($39)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Remote Helpdesk Troubleshooting</td>
+                                    <td style="text-align: center;"><span class="table-check">&check;</span></td>
+                                    <td style="text-align: center; background: #f8fbff;"><span class="table-check">&check;</span></td>
+                                    <td style="text-align: center;"><span class="table-check">&check;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Antivirus &amp; Endpoint Protection</td>
+                                    <td style="text-align: center;"><span class="table-check">&check;</span></td>
+                                    <td style="text-align: center; background: #f8fbff;"><span class="table-check">&check;</span></td>
+                                    <td style="text-align: center;"><span class="table-check">&check;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>System Health &amp; Performance Telemetry</td>
+                                    <td style="text-align: center;"><span class="table-check">&check;</span></td>
+                                    <td style="text-align: center; background: #f8fbff;"><span class="table-check">&check;</span></td>
+                                    <td style="text-align: center;"><span class="table-check">&check;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Automated OS &amp; Application Patching</td>
+                                    <td style="text-align: center;"><span class="table-dash">&mdash;</span></td>
+                                    <td style="text-align: center; background: #f8fbff;"><span class="table-check">&check;</span></td>
+                                    <td style="text-align: center;"><span class="table-check">&check;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Monthly Security &amp; Executive Health Audit</td>
+                                    <td style="text-align: center;"><span class="table-dash">&mdash;</span></td>
+                                    <td style="text-align: center; background: #f8fbff;"><span class="table-check">&check;</span></td>
+                                    <td style="text-align: center;"><span class="table-check">&check;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Priority SLA Support Queue</td>
+                                    <td style="text-align: center;"><span class="table-dash">&mdash;</span></td>
+                                    <td style="text-align: center; background: #f8fbff;"><span class="table-check">&check;</span></td>
+                                    <td style="text-align: center;"><span class="table-check">&check;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Advanced EDR (Endpoint Detection &amp; Response)</td>
+                                    <td style="text-align: center;"><span class="table-dash">&mdash;</span></td>
+                                    <td style="text-align: center; background: #f8fbff;"><span class="table-dash">&mdash;</span></td>
+                                    <td style="text-align: center;"><span class="table-check">&check;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Virtual CIO &amp; Infrastructure Roadmap Advisory</td>
+                                    <td style="text-align: center;"><span class="table-dash">&mdash;</span></td>
+                                    <td style="text-align: center; background: #f8fbff;"><span class="table-dash">&mdash;</span></td>
+                                    <td style="text-align: center;"><span class="table-check">&check;</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Asset Lifecycle &amp; Hardware License Tracking</td>
+                                    <td style="text-align: center;"><span class="table-dash">&mdash;</span></td>
+                                    <td style="text-align: center; background: #f8fbff;"><span class="table-dash">&mdash;</span></td>
+                                    <td style="text-align: center;"><span class="table-check">&check;</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Custom Tailored Support Callout -->
+                <div style="text-align: center; margin-top: 48px; background: var(--bg-surface); padding: 32px; border-radius: var(--radius-lg); border: 1px solid var(--border-subtle); max-width: 680px; margin-left: auto; margin-right: auto;">
+                    <h4 style="font-size: 1.15rem; font-weight: 700; margin-bottom: 8px;">Need a Tailored IT Infrastructure Configuration?</h4>
+                    <p style="color: var(--text-muted); font-size: 0.9375rem; margin-bottom: 20px;">
+                        Have dedicated physical servers, complex hybrid cloud networking, or custom compliance needs? We formulate bespoke service level agreements.
+                    </p>
+                    <a href="contact.html?plan=custom" class="btn btn-primary">Schedule Advisory Consultation &rarr;</a>
+                </div>
             </div>
-
-        </div>
-
-        <!-- Custom Tailored Support Note Footer Line -->
-        <div style="text-align: center; margin: 40px auto 20px auto; background-color: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #ced4da; max-width: 600px;">
-            <p style="font-size: 1.05rem; font-weight: 600; color: #050505; margin: 0;">
-                For more tailored support, please <a href="contact.html" style="color: #1877F2; text-decoration: none; border-bottom: 2px solid #1877F2;">contact us</a>.
-            </p>
-        </div>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Kumar IT & Infra Solutions. All rights reserved.</p>
+    <!-- Quiet Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-wordmark">
+                        <span class="brand-dot"></span>
+                        <span>MAKS IT Solutions</span>
+                    </a>
+                    <p>Professional IT infrastructure management and cost-effective candidate sourcing tailored specifically for small and growing businesses.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-nav">
+                        <li><a href="it-consulting.html">IT Consulting &amp; Support</a></li>
+                        <li><a href="recruitment.html">Recruitment &amp; CV Sourcing</a></li>
+                        <li><a href="services.html">Comprehensive Catalog</a></li>
+                        <li><a href="it-consulting.html#tiers">Support Pricing Tiers</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#calculator">Device Estimator</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html?plan=custom">Custom Request</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Contact Direct</h4>
+                    <ul class="footer-nav">
+                        <li style="color: var(--text-muted); font-size: 0.875rem;">Support: Mon &ndash; Fri (24/7 Monitoring)</li>
+                        <li><a href="mailto:kumaritinfra.solutions@gmail.com">kumaritinfra.solutions@gmail.com</a></li>
+                        <li><a href="contact.html" style="color: var(--accent-primary); font-weight: 600;">Open Support Ticket &rarr;</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 MAKS IT Solutions &middot; Kumar IT &amp; Infra Solutions. All rights reserved.</p>
+                <p>Designed for reliability, speed, and affordability.</p>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNavPanel = document.getElementById('mobileNavPanel');
+        if (mobileMenuBtn && mobileNavPanel) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileNavPanel.classList.toggle('open');
+            });
+        }
+    </script>
 </body>
 </html>

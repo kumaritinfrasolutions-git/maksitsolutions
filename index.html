@@ -3,76 +3,555 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | MAKS IT Solutions</title>
+    <title>MAKS IT Solutions | IT Support & Talent Sourcing</title>
+    <meta name="description" content="Professional managed IT support and flat-rate recruitment solutions for growing small businesses.">
+    <meta property="og:title" content="MAKS IT Solutions | IT Support & Talent Sourcing">
+    <meta property="og:description" content="Professional managed IT support and flat-rate recruitment solutions for growing small businesses.">
     <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
 </head>
 <body>
-    <header>
-        <h1><a href="index.html" style="color: #ffffff; text-decoration: none;">MAKS IT Solutions</a></h1>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="services.html">Our Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <!-- Top Bar Contract: 3 Zones -->
+    <header class="site-header">
+        <div class="header-container">
+            <!-- Zone 1: Single element text wordmark -->
+            <a href="index.html" class="brand-wordmark">
+                <span class="brand-dot"></span>
+                <span>MAKS IT Solutions</span>
+            </a>
+
+            <!-- Zone 2: 4-6 text links with subtle hover underlines -->
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="it-consulting.html" class="nav-link">IT Consulting</a>
+                <a href="recruitment.html" class="nav-link">Recruitment</a>
+                <a href="services.html" class="nav-link">All Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <!-- Zone 3: Primary Action -->
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="themeToggleBtn" type="button" aria-label="Toggle Psychological Blue Mode">
+                    <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                    <span>Deep Navy</span>
+                </button>
+                <a href="contact.html" class="btn btn-primary btn-sm">Request Proposal</a>
+                <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer -->
+        <div class="mobile-nav-panel" id="mobileNavPanel">
+            <div class="mobile-nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="it-consulting.html" class="nav-link">IT Consulting</a>
+                <a href="recruitment.html" class="nav-link">Recruitment</a>
+                <a href="services.html" class="nav-link">All Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="contact.html" class="btn btn-primary" style="width: 100%;">Request Proposal</a>
+        </div>
     </header>
 
     <main>
-        <!-- Updated Hero Copy -->
-        <section id="hero">
-            <h2>Your IT & Recruitment Partner for Small Businesses</h2>
-            <p>Professional IT support and affordable recruitment solutions — without the cost of maintaining large in-house teams.</p>
-            <a href="services.html" class="btn">Explore Our Services</a>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-kicker-bar">
+                            <span>Managed Technology & Hiring</span>
+                            <span class="bullet">&bull;</span>
+                            <span>Dedicated to Small Business</span>
+                        </div>
+
+                        <h1 class="hero-headline">Enterprise IT Support & Talent Sourcing for Growing Teams</h1>
+                        
+                        <p class="hero-lead">
+                            Eliminate the cost of maintaining in-house IT and recruiting departments. We provide proactive device management, endpoint security, cloud support, and pre-vetted CV sourcing at transparent, flat-rate pricing.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="#calculator" class="btn btn-primary btn-lg">Estimate Support Costs</a>
+                            <a href="services.html" class="btn btn-outline btn-lg">Explore Services</a>
+                        </div>
+                    </div>
+
+                    <!-- Focal Carrier Visual Asset -->
+                    <div class="hero-media-carrier">
+                        <img src="/src/assets/images/hero_it_consulting_1790309975478.jpg" 
+                             alt="MAKS IT Solutions Command and Operations Center" 
+                             referrerPolicy="no-referrer">
+                        <div class="hero-media-badge">
+                            <div>
+                                <div class="hero-badge-title">Proactive Remote Operations</div>
+                                <div class="hero-badge-sub">Continuous monitoring & endpoint protection</div>
+                            </div>
+                            <span class="tabular-nums" style="font-size: 0.8125rem; font-weight: 700; color: var(--accent-primary);">24/7/365</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proof Bar: Quantitative Metrics Adjacent to Hero Claims -->
+                <div class="proof-bar">
+                    <div class="proof-metric">
+                        <span class="proof-num">$12</span>
+                        <span class="proof-label">Essential support from $12/device/mo</span>
+                    </div>
+                    <div class="proof-metric">
+                        <span class="proof-num">$0.50</span>
+                        <span class="proof-label">Flat price per pre-vetted candidate CV</span>
+                    </div>
+                    <div class="proof-metric">
+                        <span class="proof-num">&lt; 15m</span>
+                        <span class="proof-label">Average critical response SLA</span>
+                    </div>
+                    <div class="proof-metric">
+                        <span class="proof-num">99.4%</span>
+                        <span class="proof-label">Client issue resolution satisfaction</span>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <!-- Updated Why Partner With Us Core Layout -->
-        <section class="content">
-            <h3 style="text-align: center; margin-bottom: 20px; font-size: 1.8rem;">Why Partner With Us?</h3>
-            
-            <p style="text-align: center; max-width: 850px; margin: 0 auto 15px auto; color: #050505; font-size: 1.1rem; font-weight: 600; line-height: 1.5;">
-                Small businesses deserve access to professional IT expertise and recruitment support without the overhead of large service providers.
-            </p>
-            
-            <p style="text-align: center; max-width: 850px; margin: 0 auto 40px auto; color: #65676B; font-size: 1.05rem; line-height: 1.6;">
-                We provide practical, flexible, and affordable solutions that help you keep your technology running, protect your business, and build the right team — allowing you to focus on what matters most: growing your business.
-            </p>
-
-            <!-- Action Link Cards for Services -->
-            <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 30px;">
-                
-                <!-- IT Consulting Box -->
-                <div class="service-card" style="border-top: 4px solid #1877F2; padding: 30px; display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <h4 style="font-size: 1.35rem; color: #1877F2; margin-bottom: 10px; font-weight: 700;">IT Consulting & Support</h4>
-                        <p style="color: #050505; font-size: 0.95rem; font-weight: 600; line-height: 1.4; margin-bottom: 12px;">
-                            Keep your business running without the cost of a full-time IT team.
-                        </p>
-                        <p style="color: #65676B; font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;">
-                            We manage and support your IT environment through remote support, proactive monitoring, endpoint security, cloud and Microsoft 365 support, infrastructure management, and technology guidance.
-                        </p>
-                    </div>
-                    <a href="it-consulting.html" style="color: #1877F2; text-decoration: none; font-weight: 600; font-size: 0.95rem; border-bottom: 2px solid #1877F2; width: max-content; padding-bottom: 2px;">View IT Support Plans &rarr;</a>
+        <!-- Interactive Pricing & Support Calculator (Cool UI Feature) -->
+        <section id="calculator" class="section-spacing">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-kicker">Interactive Estimator</span>
+                    <h2 class="section-title">Transparent Pricing Built for Your Scale</h2>
+                    <p class="section-subtitle">Slide to your total device count to immediately preview monthly and discounted annual IT support packages.</p>
                 </div>
 
-                <!-- Recruitment Solutions Box -->
-                <div class="service-card" style="border-top: 4px solid #42B72A; padding: 30px; display: flex; flex-direction: column; justify-content: space-between;">
-                    <div>
-                        <h4 style="font-size: 1.35rem; color: #42B72A; margin-bottom: 10px; font-weight: 700;">Recruitment Solutions</h4>
-                        <p style="color: #050505; font-size: 0.95rem; font-weight: 600; line-height: 1.4; margin-bottom: 12px;">
-                            Find the right people without the cost of an in-house recruitment team.
-                        </p>
-                        <p style="color: #65676B; font-size: 0.95rem; line-height: 1.6; margin-bottom: 25px;">
-                            We help small businesses source relevant candidates and simplify the initial recruitment process with flexible, pay-as-you-need recruitment services.
-                        </p>
+                <div class="calc-wrapper">
+                    <div class="calc-header">
+                        <div class="calc-title-box">
+                            <h3>IT Support Plan Estimator</h3>
+                            <p>Select your team's total workstations, laptops, and managed servers.</p>
+                        </div>
+                        <div class="calc-billing-toggle">
+                            <button type="button" class="billing-btn active" id="billingMonthlyBtn">Monthly Billing</button>
+                            <button type="button" class="billing-btn" id="billingAnnualBtn">Annual (Save 15%)</button>
+                        </div>
                     </div>
-                    <a href="recruitment.html" style="color: #42B72A; text-decoration: none; font-weight: 600; font-size: 0.95rem; border-bottom: 2px solid #42B72A; width: max-content; padding-bottom: 2px;">View Recruitment Details &rarr;</a>
+
+                    <!-- Slider -->
+                    <div class="slider-container">
+                        <div class="slider-top-row">
+                            <span class="slider-label">Number of Managed Devices:</span>
+                            <span class="slider-value-badge" id="deviceDisplay">10 Devices</span>
+                        </div>
+                        <input type="range" id="deviceSlider" min="2" max="60" value="10" step="1">
+                    </div>
+
+                    <!-- Dynamic Tier Output Cards -->
+                    <div class="calc-cards-grid">
+                        <!-- Essential -->
+                        <div class="calc-tier-card">
+                            <div>
+                                <span class="tier-kicker">Entry Tier</span>
+                                <div class="tier-name">Essential IT Support</div>
+                                <div class="tier-price-box">
+                                    <div class="tier-total-amount" id="essentialTotal">$120</div>
+                                    <div class="tier-rate-sub" id="essentialRate">$12 / device / month</div>
+                                </div>
+                                <ul class="feature-check-list">
+                                    <li>
+                                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                        Remote IT troubleshooting
+                                    </li>
+                                    <li>
+                                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                        Endpoint antivirus monitoring
+                                    </li>
+                                    <li>
+                                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                        System health checkups
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="contact.html?plan=it-essential" id="essentialCta" class="btn btn-outline" style="width: 100%;">Select Essential</a>
+                        </div>
+
+                        <!-- Advanced (Recommended) -->
+                        <div class="calc-tier-card featured">
+                            <div>
+                                <span class="tier-kicker">Most Popular</span>
+                                <div class="tier-name">Advanced IT Support</div>
+                                <div class="tier-price-box">
+                                    <div class="tier-total-amount" id="advancedTotal">$190</div>
+                                    <div class="tier-rate-sub" id="advancedRate">$19 / device / month</div>
+                                </div>
+                                <ul class="feature-check-list">
+                                    <li>
+                                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                        Everything in Essential
+                                    </li>
+                                    <li>
+                                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                        Automated patch & OS updates
+                                    </li>
+                                    <li>
+                                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                        Priority queue helpdesk
+                                    </li>
+                                    <li>
+                                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                        Monthly security & health audit
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="contact.html?plan=it-advanced" id="advancedCta" class="btn btn-primary" style="width: 100%;">Select Advanced</a>
+                        </div>
+
+                        <!-- Premium -->
+                        <div class="calc-tier-card">
+                            <div>
+                                <span class="tier-kicker">Complete Management</span>
+                                <div class="tier-name">Premium Managed IT</div>
+                                <div class="tier-price-box">
+                                    <div class="tier-total-amount" id="premiumTotal">$390</div>
+                                    <div class="tier-rate-sub" id="premiumRate">$39 / device / month</div>
+                                </div>
+                                <ul class="feature-check-list">
+                                    <li>
+                                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                        Everything in Advanced
+                                    </li>
+                                    <li>
+                                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                        Enterprise EDR security
+                                    </li>
+                                    <li>
+                                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                        vCIO strategic technology advisory
+                                    </li>
+                                    <li>
+                                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                        Dedicated SLA response times
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="contact.html?plan=it-premium" id="premiumCta" class="btn btn-outline" style="width: 100%;">Select Premium</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Asymmetric Bento Capabilities Grid -->
+        <section class="section-spacing" style="border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-kicker">Core Capabilities</span>
+                    <h2 class="section-title">Engineered to Keep Your Business Fast, Protected, and Staffed</h2>
+                    <p class="section-subtitle">We merge deep technical administration with on-demand candidate discovery so your core business never stalls.</p>
                 </div>
 
+                <div class="bento-grid">
+                    <!-- Bento Card 1: IT Infrastructure -->
+                    <div class="bento-card col-8">
+                        <div>
+                            <span class="bento-index">01. Managed Technology Infrastructure</span>
+                            <h3 class="bento-title">Complete IT Administration & Proactive Endpoint Care</h3>
+                            <p class="bento-desc">
+                                We manage your operational environment from desktop to cloud: remote troubleshooting, Microsoft 365 migrations, network diagnostics, vulnerability reviews, and patch management.
+                            </p>
+                            <div class="bento-media-thumbnail">
+                                <img src="/src/assets/images/feature_it_infra_1790309989512.jpg" 
+                                     alt="Enterprise IT Infrastructure and Server Operations" 
+                                     referrerPolicy="no-referrer">
+                            </div>
+                            <div class="bento-meta">
+                                <span>Zero-Downtime Patching</span>
+                                <span>&middot;</span>
+                                <span>Multi-Tenant Monitoring</span>
+                                <span>&middot;</span>
+                                <span>Cloud &amp; On-Prem</span>
+                            </div>
+                        </div>
+                        <a href="it-consulting.html" class="btn btn-outline" style="width: max-content;">Explore IT Tiers &rarr;</a>
+                    </div>
+
+                    <!-- Bento Card 2: Recruitment Sourcing -->
+                    <div class="bento-card col-4">
+                        <div>
+                            <span class="bento-index" style="color: var(--accent-emerald);">02. Talent Discovery</span>
+                            <h3 class="bento-title">Flat-Rate CV Sourcing at $0.50/Profile</h3>
+                            <p class="bento-desc">
+                                Eliminate heavy agency placement percentages. Send us your role requirements, and our sourcing team delivers matched, pre-screened candidate resumes directly to your inbox.
+                            </p>
+                            <div class="bento-media-thumbnail" style="aspect-ratio: 4 / 3;">
+                                <img src="/src/assets/images/feature_talent_recruitment_1790310004537.jpg" 
+                                     alt="Talent Acquisition and CV Screening Specialists" 
+                                     referrerPolicy="no-referrer">
+                            </div>
+                            <div class="bento-meta">
+                                <span>$0.50 / Candidate</span>
+                                <span>&middot;</span>
+                                <span>48h Delivery</span>
+                            </div>
+                        </div>
+                        <a href="recruitment.html" class="btn btn-emerald" style="width: 100%;">Order Candidate CVs &rarr;</a>
+                    </div>
+
+                    <!-- Bento Card 3: Multi-Service Advantage -->
+                    <div class="bento-card col-6">
+                        <div>
+                            <span class="bento-index">03. Integrated Partner Advantage</span>
+                            <h3 class="bento-title">One Single Point of Contact for Systems and Staffing</h3>
+                            <p class="bento-desc">
+                                When onboarding new personnel, seamlessly provision new laptops, email accounts, and endpoint security profiles without coordinating between disparate third-party vendors.
+                            </p>
+                            <ul class="feature-check-list">
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Automated user onboarding &amp; device provisioning
+                                </li>
+                                <li>
+                                    <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                    Predictable, transparent month-to-month invoicing
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="services.html" class="btn btn-outline" style="width: max-content;">View Service Catalog</a>
+                    </div>
+
+                    <!-- Bento Card 4: Rapid Onboarding -->
+                    <div class="bento-card col-6">
+                        <div>
+                            <span class="bento-index">04. Effortless Kickoff</span>
+                            <h3 class="bento-title">Setup Within 24 Hours with Zero Disruptions</h3>
+                            <p class="bento-desc">
+                                Deployment requires no on-premise hardware installations. We deploy lightweight agent monitoring silently in the background and start protecting your fleet immediately.
+                            </p>
+                            <div class="bento-meta">
+                                <span>No Lengthy Lock-in Contracts</span>
+                                <span>&middot;</span>
+                                <span>Immediate Endpoint Coverage</span>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="btn btn-primary" style="width: max-content;">Schedule Onboarding Call</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive FAQ Accordion -->
+        <section class="section-spacing">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-kicker">Answers &amp; Clarity</span>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
+                    <p class="section-subtitle">Everything you need to know about our support tiers, CV sourcing turnaround, and billing.</p>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item open">
+                        <button type="button" class="faq-question">
+                            <span>How does remote IT support work for our employees?</span>
+                            <span class="faq-chevron">&darr;</span>
+                        </button>
+                        <div class="faq-answer">
+                            We install a secure, lightweight management agent on each enrolled device. When your staff encounters an issue, they can submit a request through a desktop shortcut or email. Our certified technicians connect remotely to troubleshoot and fix problems within minutes.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question">
+                            <span>How does the $0.50 CV sourcing model work?</span>
+                            <span class="faq-chevron">&darr;</span>
+                        </button>
+                        <div class="faq-answer">
+                            You share your job description, required experience, and target location. Our recruitment researchers source and filter active profiles from talent databases and verify matching criteria. You receive a curated batch of candidate CVs and pay only $0.50 per resume delivered, with no backend placement fees.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question">
+                            <span>Are there long-term contracts or lock-ins?</span>
+                            <span class="faq-chevron">&darr;</span>
+                        </button>
+                        <div class="faq-answer">
+                            No. Our standard IT support contracts operate on flexible month-to-month agreements. You can adjust your enrolled device count as your team grows or scales down. We also offer an optional 15% discount for teams that choose annual prepaid billing.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button type="button" class="faq-question">
+                            <span>Can we bundle both IT Support and Recruitment?</span>
+                            <span class="faq-chevron">&darr;</span>
+                        </button>
+                        <div class="faq-answer">
+                            Yes! Many small businesses leverage both services: our recruitment service supplies vetted candidates for upcoming openings, while our IT team immediately prepares device configurations and access profiles upon hiring.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Decision Call to Action -->
+        <section class="section-spacing" style="border-top: 1px solid var(--border-subtle);">
+            <div class="container text-center" style="max-width: 760px; margin: 0 auto;">
+                <span class="section-kicker">Ready To Modernize?</span>
+                <h2 class="section-title">Protect Your Systems and Build Your Team Today</h2>
+                <p class="section-subtitle" style="margin-bottom: 32px;">
+                    Get in touch with our team for a tailored proposal or immediate IT onboarding. No long-term commitments, no surprise charges.
+                </p>
+                <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Request Custom Proposal</a>
+                    <a href="it-consulting.html" class="btn btn-outline btn-lg">View Detailed IT Plans</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 MAKS IT Solutions. All rights reserved.</p>
+    <!-- Quiet Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-wordmark">
+                        <span class="brand-dot"></span>
+                        <span>MAKS IT Solutions</span>
+                    </a>
+                    <p>Professional IT infrastructure management and cost-effective candidate sourcing tailored specifically for small and growing businesses.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-nav">
+                        <li><a href="it-consulting.html">IT Consulting &amp; Support</a></li>
+                        <li><a href="recruitment.html">Recruitment &amp; CV Sourcing</a></li>
+                        <li><a href="services.html">Comprehensive Catalog</a></li>
+                        <li><a href="it-consulting.html#tiers">Support Pricing Tiers</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#calculator">Price Estimator</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html?plan=custom">Custom Request</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Contact Direct</h4>
+                    <ul class="footer-nav">
+                        <li style="color: var(--text-muted); font-size: 0.875rem;">Support: Mon &ndash; Fri (24/7 Monitoring)</li>
+                        <li><a href="mailto:kumaritinfra.solutions@gmail.com">kumaritinfra.solutions@gmail.com</a></li>
+                        <li><a href="contact.html" style="color: var(--accent-primary); font-weight: 600;">Open Support Ticket &rarr;</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 MAKS IT Solutions &middot; Kumar IT &amp; Infra Solutions. All rights reserved.</p>
+                <p>Designed for reliability, speed, and affordability.</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- Interactive Script for Calculator, Mobile Menu, and FAQ -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNavPanel = document.getElementById('mobileNavPanel');
+        if (mobileMenuBtn && mobileNavPanel) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileNavPanel.classList.toggle('open');
+            });
+        }
+
+        // FAQ Accordions
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const item = button.closest('.faq-item');
+                const wasOpen = item.classList.contains('open');
+                document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('open'));
+                if (!wasOpen) {
+                    item.classList.add('open');
+                }
+            });
+        });
+
+        // Interactive Pricing Calculator
+        const deviceSlider = document.getElementById('deviceSlider');
+        const deviceDisplay = document.getElementById('deviceDisplay');
+        const billingMonthlyBtn = document.getElementById('billingMonthlyBtn');
+        const billingAnnualBtn = document.getElementById('billingAnnualBtn');
+
+        const essentialTotal = document.getElementById('essentialTotal');
+        const essentialRate = document.getElementById('essentialRate');
+        const advancedTotal = document.getElementById('advancedTotal');
+        const advancedRate = document.getElementById('advancedRate');
+        const premiumTotal = document.getElementById('premiumTotal');
+        const premiumRate = document.getElementById('premiumRate');
+
+        const essentialCta = document.getElementById('essentialCta');
+        const advancedCta = document.getElementById('advancedCta');
+        const premiumCta = document.getElementById('premiumCta');
+
+        let isAnnual = false;
+
+        function updateCalculator() {
+            if (!deviceSlider) return;
+            const count = parseInt(deviceSlider.value, 10);
+            deviceDisplay.textContent = `${count} ${count === 1 ? 'Device' : 'Devices'}`;
+
+            // Rates: Essential $12, Advanced $19, Premium $39
+            const discount = isAnnual ? 0.85 : 1.0;
+            const eRate = Math.round(12 * discount);
+            const aRate = Math.round(19 * discount);
+            const pRate = Math.round(39 * discount);
+
+            const eSum = count * eRate;
+            const aSum = count * aRate;
+            const pSum = count * pRate;
+
+            essentialTotal.textContent = `$${eSum}`;
+            essentialRate.textContent = `$${eRate} / device / mo ${isAnnual ? '(Annual bill)' : ''}`;
+
+            advancedTotal.textContent = `$${aSum}`;
+            advancedRate.textContent = `$${aRate} / device / mo ${isAnnual ? '(Annual bill)' : ''}`;
+
+            premiumTotal.textContent = `$${pSum}`;
+            premiumRate.textContent = `$${pRate} / device / mo ${isAnnual ? '(Annual bill)' : ''}`;
+
+            // Update CTA links with query parameters
+            const billingParam = isAnnual ? 'annual' : 'monthly';
+            if (essentialCta) essentialCta.href = `contact.html?plan=it-essential&devices=${count}&billing=${billingParam}`;
+            if (advancedCta) advancedCta.href = `contact.html?plan=it-advanced&devices=${count}&billing=${billingParam}`;
+            if (premiumCta) premiumCta.href = `contact.html?plan=it-premium&devices=${count}&billing=${billingParam}`;
+        }
+
+        if (deviceSlider) {
+            deviceSlider.addEventListener('input', updateCalculator);
+        }
+
+        if (billingMonthlyBtn && billingAnnualBtn) {
+            billingMonthlyBtn.addEventListener('click', () => {
+                isAnnual = false;
+                billingMonthlyBtn.classList.add('active');
+                billingAnnualBtn.classList.remove('active');
+                updateCalculator();
+            });
+
+            billingAnnualBtn.addEventListener('click', () => {
+                isAnnual = true;
+                billingAnnualBtn.classList.add('active');
+                billingMonthlyBtn.classList.remove('active');
+                updateCalculator();
+            });
+        }
+
+        // Initialize calculator
+        updateCalculator();
+    </script>
 </body>
 </html>

@@ -3,40 +3,303 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services | Kumar IT & Infra Solutions</title>
+    <title>Services Catalog | MAKS IT Solutions</title>
+    <meta name="description" content="Explore our full suite of IT consulting, cloud management, endpoint security, and flat-rate talent sourcing.">
+    <meta property="og:title" content="Services Catalog | MAKS IT Solutions">
+    <meta property="og:description" content="Explore our full suite of IT consulting, cloud management, endpoint security, and flat-rate talent sourcing.">
     <link rel="stylesheet" href="style.css">
+    <script src="theme.js"></script>
+    <style>
+        .filter-tab-bar {
+            display: inline-flex;
+            background: var(--bg-subtle);
+            padding: 4px;
+            border-radius: var(--radius-md);
+            gap: 4px;
+            margin-bottom: 40px;
+        }
+        .filter-tab-btn {
+            padding: 8px 18px;
+            font-size: 0.875rem;
+            font-weight: 600;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .filter-tab-btn.active {
+            background: var(--bg-surface);
+            color: var(--text-primary);
+            box-shadow: var(--shadow-sm);
+        }
+        .catalog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 28px;
+        }
+        .catalog-card {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.2s ease;
+        }
+        .catalog-card:hover {
+            box-shadow: var(--shadow-md);
+            border-color: var(--border-strong);
+            transform: translateY(-2px);
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1><a href="index.html" style="color: #ffffff; text-decoration: none;">Kumar IT & Infra Solutions</a></h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="services.html" class="active">Our Services</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+    <!-- Top Bar Contract -->
+    <header class="site-header">
+        <div class="header-container">
+            <a href="index.html" class="brand-wordmark">
+                <span class="brand-dot"></span>
+                <span>MAKS IT Solutions</span>
+            </a>
+
+            <nav class="site-nav">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="it-consulting.html" class="nav-link">IT Consulting</a>
+                <a href="recruitment.html" class="nav-link">Recruitment</a>
+                <a href="services.html" class="nav-link active">All Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle-btn" id="themeToggleBtn" type="button" aria-label="Toggle Psychological Blue Mode">
+                    <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                    <span>Deep Navy</span>
+                </button>
+                <a href="contact.html" class="btn btn-primary btn-sm">Request Proposal</a>
+                <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+                    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-nav-panel" id="mobileNavPanel">
+            <div class="mobile-nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="it-consulting.html" class="nav-link">IT Consulting</a>
+                <a href="recruitment.html" class="nav-link">Recruitment</a>
+                <a href="services.html" class="nav-link active">All Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="contact.html" class="btn btn-primary" style="width: 100%;">Request Proposal</a>
+        </div>
     </header>
 
-    <main class="content">
-        <h2>Our Services</h2>
-        <p>Select a specialized path below to see how we provide tailored, budget-friendly business solutions to help your organization grow.</p>
-        
-        <div class="services-grid">
-            <div class="service-card spec-card">
-                <h3>IT Consulting</h3>
-                <p>Professional IT Support Without the Cost of an In-House IT Team.</p>
-                <a href="it-consulting.html" class="btn text-btn">View IT Details &rarr;</a>
+    <main class="section-spacing">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-kicker">Comprehensive Catalog</span>
+                <h1 class="section-title">Tailored IT &amp; Hiring Solutions for Growth</h1>
+                <p class="section-subtitle">
+                    Select a service category below to view how our specialized support models reduce your operational overhead.
+                </p>
+
+                <!-- Interactive Filter Controls (Functional Tabs) -->
+                <div class="filter-tab-bar" style="margin-top: 24px;">
+                    <button type="button" class="filter-tab-btn active" data-filter="all">All Solutions (6)</button>
+                    <button type="button" class="filter-tab-btn" data-filter="it">IT Support (4)</button>
+                    <button type="button" class="filter-tab-btn" data-filter="recruitment">Recruitment (2)</button>
+                </div>
             </div>
-            
-            <div class="service-card spec-card">
-                <h3>Recruitment Support</h3>
-                <p>Scale your hiring efficiently with targeted high-quality talent profiles delivered on a flat price-per-CV basis.</p>
-                <a href="recruitment.html" class="btn text-btn">View Recruitment Details &rarr;</a>
+
+            <!-- Filterable Catalog Grid -->
+            <div class="catalog-grid" id="catalogGrid">
+                <!-- 01: Remote Helpdesk -->
+                <div class="catalog-card" data-category="it">
+                    <div>
+                        <span class="bento-index">01. Managed IT</span>
+                        <h3 class="bento-title">Remote Helpdesk &amp; Troubleshooting</h3>
+                        <p class="bento-desc">
+                            Direct, fast technician assistance for your employees. We diagnose hardware crashes, software anomalies, printer networking, and configuration snags remotely.
+                        </p>
+                        <div class="bento-meta">
+                            <span>From $12 / Device</span>
+                            <span>&middot;</span>
+                            <span>SLA Helpdesk Queue</span>
+                        </div>
+                    </div>
+                    <a href="it-consulting.html#tiers" class="btn btn-outline" style="width: max-content;">View Device Tiers &rarr;</a>
+                </div>
+
+                <!-- 02: Endpoint Security -->
+                <div class="catalog-card" data-category="it">
+                    <div>
+                        <span class="bento-index">02. Cybersecurity</span>
+                        <h3 class="bento-title">Endpoint Antivirus &amp; Patch Management</h3>
+                        <p class="bento-desc">
+                            Automate critical Windows and Mac security updates. Prevent malware and ransomware incursions through centralized anti-threat monitoring.
+                        </p>
+                        <div class="bento-meta">
+                            <span>Zero-Day Protection</span>
+                            <span>&middot;</span>
+                            <span>Continuous Audits</span>
+                        </div>
+                    </div>
+                    <a href="it-consulting.html#tiers" class="btn btn-outline" style="width: max-content;">View Security Tiers &rarr;</a>
+                </div>
+
+                <!-- 03: Microsoft 365 & Cloud -->
+                <div class="catalog-card" data-category="it">
+                    <div>
+                        <span class="bento-index">03. Cloud Systems</span>
+                        <h3 class="bento-title">Microsoft 365 &amp; Google Workspace Care</h3>
+                        <p class="bento-desc">
+                            Seamless user administration, mailbox migrations, permission hardening, shared drive architectures, and enterprise multi-factor authentication (MFA).
+                        </p>
+                        <div class="bento-meta">
+                            <span>Cloud Administration</span>
+                            <span>&middot;</span>
+                            <span>Zero Downtime Migration</span>
+                        </div>
+                    </div>
+                    <a href="contact.html?plan=it-advanced" class="btn btn-outline" style="width: max-content;">Configure Cloud Setup &rarr;</a>
+                </div>
+
+                <!-- 04: vCIO & Advisory -->
+                <div class="catalog-card" data-category="it">
+                    <div>
+                        <span class="bento-index">04. Strategic Guidance</span>
+                        <h3 class="bento-title">Virtual CIO &amp; Infrastructure Roadmap</h3>
+                        <p class="bento-desc">
+                            Get senior technology advisory without the $250k executive salary. We audit existing software licenses, hardware lifecycles, and optimize IT vendor costs.
+                        </p>
+                        <div class="bento-meta">
+                            <span>Cost Optimization</span>
+                            <span>&middot;</span>
+                            <span>Included in Premium</span>
+                        </div>
+                    </div>
+                    <a href="it-consulting.html#tiers" class="btn btn-outline" style="width: max-content;">Learn About Premium &rarr;</a>
+                </div>
+
+                <!-- 05: Flat-Rate CV Sourcing -->
+                <div class="catalog-card" data-category="recruitment">
+                    <div>
+                        <span class="bento-index" style="color: var(--accent-emerald);">05. Candidate Discovery</span>
+                        <h3 class="bento-title">Flat-Rate CV Sourcing ($0.50/Resume)</h3>
+                        <p class="bento-desc">
+                            Provide your job description and hiring parameters. We source and deliver verified, matching candidate profiles directly to your inbox with zero placement fees.
+                        </p>
+                        <div class="bento-meta">
+                            <span>$0.50 / Matched CV</span>
+                            <span>&middot;</span>
+                            <span>48h Batch Delivery</span>
+                        </div>
+                    </div>
+                    <a href="recruitment.html" class="btn btn-emerald" style="width: max-content;">Calculate CV Order &rarr;</a>
+                </div>
+
+                <!-- 06: New Hire Device Provisioning -->
+                <div class="catalog-card" data-category="recruitment">
+                    <div>
+                        <span class="bento-index" style="color: var(--accent-emerald);">06. Talent + Tech Bundle</span>
+                        <h3 class="bento-title">Seamless New Hire IT Onboarding</h3>
+                        <p class="bento-desc">
+                            When your chosen candidate accepts your offer, our IT technicians configure corporate email, security protocols, VPN access, and deploy workstations on day one.
+                        </p>
+                        <div class="bento-meta">
+                            <span>Full Lifecycle Support</span>
+                            <span>&middot;</span>
+                            <span>No Inter-Vendor Delays</span>
+                        </div>
+                    </div>
+                    <a href="contact.html?plan=custom" class="btn btn-outline" style="width: max-content;">Inquire About Bundles &rarr;</a>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Kumar IT & Infra Solutions. All rights reserved.</p>
+    <!-- Quiet Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand-wordmark">
+                        <span class="brand-dot"></span>
+                        <span>MAKS IT Solutions</span>
+                    </a>
+                    <p>Professional IT infrastructure management and cost-effective candidate sourcing tailored specifically for small and growing businesses.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-nav">
+                        <li><a href="it-consulting.html">IT Consulting &amp; Support</a></li>
+                        <li><a href="recruitment.html">Recruitment &amp; CV Sourcing</a></li>
+                        <li><a href="services.html">Comprehensive Catalog</a></li>
+                        <li><a href="it-consulting.html#tiers">Support Pricing Tiers</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#calculator">Device Estimator</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="contact.html?plan=custom">Custom Request</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="footer-heading">Contact Direct</h4>
+                    <ul class="footer-nav">
+                        <li style="color: var(--text-muted); font-size: 0.875rem;">Support: Mon &ndash; Fri (24/7 Monitoring)</li>
+                        <li><a href="mailto:kumaritinfra.solutions@gmail.com">kumaritinfra.solutions@gmail.com</a></li>
+                        <li><a href="contact.html" style="color: var(--accent-primary); font-weight: 600;">Open Support Ticket &rarr;</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 MAKS IT Solutions &middot; Kumar IT &amp; Infra Solutions. All rights reserved.</p>
+                <p>Designed for reliability, speed, and affordability.</p>
+            </div>
+        </div>
     </footer>
+
+    <script>
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileNavPanel = document.getElementById('mobileNavPanel');
+        if (mobileMenuBtn && mobileNavPanel) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileNavPanel.classList.toggle('open');
+            });
+        }
+
+        // Filter Tabs
+        const filterBtns = document.querySelectorAll('.filter-tab-btn');
+        const cards = document.querySelectorAll('.catalog-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+                cards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'flex';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
