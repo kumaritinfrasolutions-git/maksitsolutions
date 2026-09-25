@@ -27,7 +27,6 @@ app.post(['/contact', '/contact.html'], (req, res) => {
     <title>Inquiry Received | MAKS IT Solutions</title>
     <meta property="og:title" content="Inquiry Received | MAKS IT Solutions">
     <link rel="stylesheet" href="style.css">
-    <script src="theme.js"></script>
 </head>
 <body>
     <header class="site-header">
@@ -44,10 +43,6 @@ app.post(['/contact', '/contact.html'], (req, res) => {
                 <a href="contact.html" class="nav-link active">Contact</a>
             </nav>
             <div class="header-actions">
-                <button class="theme-toggle-btn" id="themeToggleBtn" type="button" aria-label="Toggle Psychological Blue Mode">
-                    <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
-                    <span>Deep Navy</span>
-                </button>
                 <a href="contact.html" class="btn btn-primary btn-sm">Request Proposal</a>
             </div>
         </div>
