@@ -902,10 +902,8 @@ input[type="range"]::-webkit-slider-thumb:hover {
    Contact Form & Interactive Inquiries
    ========================================================================== */
 .contact-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 48px;
-  align-items: start;
+  max-width: 780px;
+  margin: 0 auto;
 }
 
 .contact-info-panel {
