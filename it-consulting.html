@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Consulting | Kumar IT & Infra Solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Unique local styles for the 3-column pricing structure */
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; margin: 30px 0 30px 0; align-items: start; }
+        .pricing-box { background: #ffffff; padding: 30px 20px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #ced4da; text-align: center; display: flex; flex-direction: column; justify-content: space-between; height: 100%; min-height: 650px; box-sizing: border-box; }
+        .pricing-box.featured { border: 2px solid #1877F2; box-shadow: 0 6px 16px rgba(24, 119, 242, 0.15); position: relative; }
+        .pricing-box h4 { font-size: 1.4rem; color: #050505; margin-bottom: 5px; font-weight: 700; }
+        .price-badge { margin: 15px 0; background-color: #F0F2F5; padding: 12px; border-radius: 8px; }
+        .price-num { font-size: 1.8rem; font-weight: bold; color: #1877F2; display: block; }
+        .price-sub { font-size: 0.9rem; color: #65676B; font-weight: 600; }
+        .price-desc { color: #65676B; font-style: italic; margin-bottom: 20px; font-size: 0.9rem; line-height: 1.4; min-height: 55px; }
+        .feature-list { list-style-type: none; padding-left: 0; margin: 0 auto 25px auto; text-align: left; width: 100%; max-width: 255px; flex-grow: 1; }
+        .feature-list li { margin-bottom: 10px; color: #050505; font-size: 0.95rem; display: flex; align-items: flex-start; line-height: 1.3; }
+        .feature-list li span { color: #1877F2; font-weight: bold; margin-right: 10px; font-size: 1.05rem; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="color: #ffffff; text-decoration: none;">Kumar IT & Infra Solutions</a></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html" class="active">Our Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h2>IT Consulting Services</h2>
+        <p style="font-size: 1.25rem; font-weight: 600; color: #65676B; margin-top: -10px; margin-bottom: 25px;">Run Your Business. Leave the IT to Us.</p>
+        
+        <div class="service-detail-card">
+            <p class="highlight-text">We provide enterprise-grade IT support tailored for micro and small businesses, giving you access to dedicated technical expertise without the overhead of a full-time IT department.</p>
+            <p>Our goal is to ensure your business remains secure, modern, and operationally efficient without the overhead costs of a full-time, in-house IT department. From setting up secure remote environments to handling software migration and daily technical troubleshooting, we have you covered.</p>
+        </div>
+
+        <!-- Pricing Section Header -->
+        <h3 style="margin-top: 40px; margin-bottom: 5px;">Charges Per Service Model</h3>
+        <p style="color: #65676B; margin-bottom: 25px;">Select the ideal plan tier scale required to fit your technical support infrastructure demands.</p>
+        
+        <div class="pricing-grid">
+            
+            <!-- Tier 1: Essential IT Support -->
+            <div class="pricing-box">
+                <div>
+                    <h4>1. Essential IT Support</h4>
+                    <div class="price-badge">
+                        <span class="price-num">$12</span>
+                        <span class="price-sub">/ Device / Month</span>
+                    </div>
+                    <p class="price-desc">Reliable IT support for everyday business needs.</p>
+                </div>
+                <ul class="feature-list">
+                    <li><span>&check;</span> Remote IT Support</li>
+                    <li><span>&check;</span> System Health Monitoring</li>
+                    <li><span>&check;</span> Antivirus & Endpoint Protection</li>
+                    <li><span>&check;</span> Proactive Monitoring & Support</li>
+                    <li><span>&check;</span> Troubleshooting & Maintenance</li>
+                </ul>
+                <a href="contact.html" class="btn" style="width: 100%; box-sizing: border-box; display: block;">Request IT Support Setup</a>
+            </div>
+
+            <!-- Tier 2: Advanced IT Support -->
+            <div class="pricing-box featured">
+                <div>
+                    <h4>2. Advanced IT Support</h4>
+                    <div class="price-badge" style="background-color: #e7f3ff;">
+                        <span class="price-num">$19</span>
+                        <span class="price-sub">/ Device / Month</span>
+                    </div>
+                    <p class="price-desc">Proactive IT management to keep your business secure and productive.</p>
+                </div>
+                <ul class="feature-list">
+                    <li style="font-weight: 600; color: #1877F2;"><span>&check;</span> Everything in Essential</li>
+                    <li><span>&check;</span> Patch & Update Management</li>
+                    <li><span>&check;</span> Application Update Management</li>
+                    <li><span>&check;</span> Advanced Endpoint Security</li>
+                    <li><span>&check;</span> Performance Monitoring & Optimization</li>
+                    <li><span>&check;</span> Priority IT Support</li>
+                    <li><span>&check;</span> Security & Compliance Monitoring</li>
+                    <li><span>&check;</span> Monthly IT Health Report</li>
+                </ul>
+                <a href="contact.html" class="btn" style="width: 100%; box-sizing: border-box; display: block;">Upgrade to Advanced Support</a>
+            </div>
+
+            <!-- Tier 3: Premium Managed IT -->
+            <div class="pricing-box">
+                <div>
+                    <h4>3. Premium Managed IT</h4>
+                    <div class="price-badge">
+                        <span class="price-num">$39</span>
+                        <span class="price-sub">/ Device / Month</span>
+                    </div>
+                    <p class="price-desc">Complete IT management, proactive guidance, and infrastructure expertise for your business.</p>
+                </div>
+                <ul class="feature-list">
+                    <li style="font-weight: 600; color: #1877F2;"><span>&check;</span> Everything in Advanced Support</li>
+                    <li><span>&check;</span> Infrastructure Health & Review</li>
+                    <li><span>&check;</span> IT Infrastructure Recommendations</li>
+                    <li><span>&check;</span> Security & Configuration Reviews</li>
+                    <li><span>&check;</span> Technology Planning & Advisory</li>
+                    <li><span>&check;</span> Vulnerability Management</li>
+                    <li><span>&check;</span> Advanced Endpoint Security / EDR</li>
+                    <li><span>&check;</span> IT Asset Management</li>
+                    <li><span>&check;</span> Monthly IT & Security Reports</li>
+                    <li><span>&check;</span> Priority / SLA-Based Support</li>
+                    <li><span>&check;</span> Regular Infrastructure Reviews</li>
+                </ul>
+                <a href="contact.html" class="btn" style="width: 100%; box-sizing: border-box; display: block;">Request Premium Setup</a>
+            </div>
+
+        </div>
+
+        <!-- Custom Tailored Support Note Footer Line -->
+        <div style="text-align: center; margin: 40px auto 20px auto; background-color: #ffffff; padding: 20px; border-radius: 8px; border: 1px solid #ced4da; max-width: 600px;">
+            <p style="font-size: 1.05rem; font-weight: 600; color: #050505; margin: 0;">
+                For more tailored support, please <a href="contact.html" style="color: #1877F2; text-decoration: none; border-bottom: 2px solid #1877F2;">contact us</a>.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Kumar IT & Infra Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>

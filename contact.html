@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | MAKS IT Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html" style="color: #ffffff; text-decoration: none;">MAKS IT Solutions</a></h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Our Services</a>
+            <a href="contact.html" class="active">Contact</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <h2>Work With Us</h2>
+        <p>Ready to solve your IT struggles or scale your hiring? Tell us what you need below.</p>
+        
+        <div class="contact-container">
+            <form class="contact-form" name="contact" method="POST" data-netlify="true" style="max-width: 600px; margin: 0 auto; width: 100%;">
+                <input type="hidden" name="form-name" value="contact" />
+
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email Address" required>
+                <input type="tel" name="phone" placeholder="Your Contact Number" required>
+                
+                <select name="service_requested" style="width: 100%; padding: 12px; margin-bottom: 15px; border: 1px solid #ced4da; border-radius: 6px; font-family: inherit; background: #F0F2F5;" required>
+                    <option value="" disabled selected>Which service do you need?</option>
+                    <option value="it-essential">Essential IT Support Plan</option>
+                    <option value="it-advanced">Advanced IT Support Plan</option>
+                    <option value="it-premium">Premium Managed IT Plan</option>
+                    <option value="recruitment">Recruitment Support (Per-CV Basis)</option>
+                    <option value="custom">Custom Multi-Service Proposal</option>
+                </select>
+
+                <textarea name="message" placeholder="Tell us briefly about your business needs..." rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MAKS IT Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
