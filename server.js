@@ -24,8 +24,8 @@ app.post(['/contact', '/contact.html'], (req, res) => {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inquiry Received | MAKS IT Solutions</title>
-    <meta property="og:title" content="Inquiry Received | MAKS IT Solutions">
+    <title>Inquiry Received | My IT HR Solutions</title>
+    <meta property="og:title" content="Inquiry Received | My IT HR Solutions">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -33,7 +33,7 @@ app.post(['/contact', '/contact.html'], (req, res) => {
         <div class="header-container">
             <a href="index.html" class="brand-wordmark">
                 <span class="brand-dot"></span>
-                <span>MAKS IT Solutions</span>
+                <span>My IT HR Solutions</span>
             </a>
             <nav class="site-nav">
                 <a href="index.html" class="nav-link">Home</a>
@@ -64,7 +64,7 @@ app.post(['/contact', '/contact.html'], (req, res) => {
     </main>
     <footer class="site-footer">
         <div class="container text-center">
-            <p>&copy; 2026 MAKS IT Solutions &middot; Kumar IT &amp; Infra Solutions. All rights reserved.</p>
+            <p>&copy; 2026 My IT HR Solutions &middot; Kumar IT &amp; Infra Solutions. All rights reserved.</p>
         </div>
     </footer>
 </body>
